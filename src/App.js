@@ -1,5 +1,5 @@
 import { BrowserRouter as Router, Routes, Route } from "react-router-dom";
-// import Details from "./pages/details";
+import Details from "./pages/details";
 import Home from "./pages/home";
 
 function App() {
@@ -7,7 +7,7 @@ function App() {
     <Router>
       <Routes>
         <Route exact path="/" element={<Home />} />
-        {/* <Route path="/categories/:idc" element={<Details />} /> */}
+        <Route path="/categories/:idc" element={<Details />} />
       </Routes>
     </Router>
   );
