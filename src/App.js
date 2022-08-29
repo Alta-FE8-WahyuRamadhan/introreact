@@ -1,12 +1,15 @@
-// import logo from "./logo.svg";
-// import "./App.css";
-import Navbar from "./components/navbar";
+import { BrowserRouter as Router, Routes, Route } from "react-router-dom";
+// import Details from "./pages/details";
+import Home from "./pages/home";
 
 function App() {
   return (
-    <>
-      <Navbar />
-    </>
+    <Router>
+      <Routes>
+        <Route exact path="/" element={<Home />} />
+        {/* <Route path="/categories/:idc" element={<Details />} /> */}
+      </Routes>
+    </Router>
   );
 }
 
